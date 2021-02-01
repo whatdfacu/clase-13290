@@ -8,7 +8,7 @@ $primary: #707070;
     font-weight: normal;
 }
 body {
-	height: 1230px;
+	height: 100%;
     padding: 3rem;
     background: linear-gradient(to bottom, #45a0e653, #45a0e653, #45a0e653, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);}
         
@@ -49,13 +49,18 @@ footer{
     }
 }
 
-header{margin-top: ;}
+header{margin-top: 3rem;}
     
 @media (min-width:992px){
     nav{
         max-width: fit-content!important;
     }
 }
+    
+@media (min-width: 1200px){
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 960px!important;
+}}
 @media (max-width:420px){
     .main-headline {margin-top: 3rem;}
 }
