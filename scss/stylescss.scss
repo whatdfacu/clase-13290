@@ -1,0 +1,59 @@
+@import "./bootstrap/scss/bootstrap.scss";
+
+$primary: #707070;
+
+* {
+    text-decoration: none;
+    font-family: "Segoe UI",  "Roboto", sans-serif!important;
+    font-weight: normal;
+}
+body {
+	height: 1230px;
+    padding: 3rem;
+    background: linear-gradient(to bottom, #45a0e653, #45a0e653, #45a0e653, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);}
+        
+header{
+    grid-area: header;
+    grid-row: 1/1;
+    grid-column: 2/2;}
+    nav{
+    text-align: center;
+    grid-area: nav;
+    grid-row: 3/3;
+    grid-column: 2/2;}
+        a
+        {padding: 1rem;
+        font-size: 1.2rem; font-weight: bold;
+    }
+
+main{
+    .main-headline{
+    margin-bottom: 3rem;
+
+        .headline-color{
+        color: $primary;
+        }
+    }
+    .color-darken{
+        color: darken($primary, 15);
+    }
+}
+
+footer{
+    .footer-deco{
+        margin-top: 5rem;
+        text-align: center;
+        grid-row: 5/5;
+        grid-column: 1 / span 3;
+        color: lighten($primary, 10);
+    }
+}
+    
+@media (min-width:992px){
+    nav{
+        max-width: fit-content!important;
+    }
+}
+@media (max-width:420px){
+    .main-headline {margin-top: 3rem;}
+}
