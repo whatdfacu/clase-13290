@@ -4264,7 +4264,7 @@ a.close.disabled {
 
 @media (min-width: 1200px) {
   .modal-xl {
-    max-width: fit-content; } }
+    max-width: 1140px; } }
 
 .tooltip {
   position: absolute;
