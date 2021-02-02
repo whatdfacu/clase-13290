@@ -7211,3 +7211,9 @@ header {
 @media (max-width: 420px) {
   .main-headline {
     margin-top: 3rem; } }
+
+.carousel-control-prev-icon {
+  background-image: url(../images/prev2.svg); }
+
+.carousel-control-next-icon {
+  background-image: url(../images/next2.svg); }
