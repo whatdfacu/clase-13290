@@ -7181,7 +7181,7 @@ body {
     margin-top: 1rem;
     box-shadow: 0 0 5px black;
     border-radius: 10px 10px 0 0;
-    padding: 1rem;
+    padding-bottom: 1rem;
     background-color: #a3a3a3; }
     body main .main-headline {
       margin-bottom: 3rem; }
@@ -7198,12 +7198,18 @@ footer {
   box-shadow: 0 0 5px black;
   border-radius: 0 0 10px 10px;
   background-color: #bdbdbd; }
+  footer div div img {
+    padding-bottom: 1rem; }
   footer .footer-deco {
     text-align: left;
     color: #347aae; }
 
 header {
+  background: #707070;
+  background: linear-gradient(180deg, #a3a3a3 0%, #707070 50%, #a3a3a3 100%);
+  padding: 2rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem; }

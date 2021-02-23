@@ -27,7 +27,7 @@ body {
         margin-top: 1rem;
         box-shadow: 0 0 5px black;
         border-radius: 10px 10px 0 0;
-        padding: 1rem;
+        padding-bottom: 1rem;
         background-color: lighten($primary, 20);
         .main-headline{
             margin-bottom: 3rem;
@@ -44,6 +44,12 @@ body {
         }
     }
     footer{
+        div{
+            div{
+                img{padding-bottom: 1rem;
+                }
+            }
+        }
         margin-bottom: 1rem;
         box-shadow: 0 0 5px black;
         border-radius: 0 0 10px 10px;
@@ -55,7 +61,11 @@ body {
     }
 
 header{
+    background: rgb(112,112,112);
+    background: linear-gradient(180deg,#a3a3a3 0%, $primary 50%,#a3a3a3 100%);
+    padding: 2rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
