@@ -1,6 +1,8 @@
+$primary: #707070;
+$secondary: #347aae;
+
 @import "./bootstrap/scss/bootstrap.scss";
 
-$primary: #707070;
 
 * {
     text-decoration: none;
@@ -13,35 +15,46 @@ nav{
     grid-row: 3/3;
     grid-column: 2/2;}
     a{
+        color: darken($secondary, $amount: 20)!important;
         padding: 1rem;
         font-size: 1.2rem; font-weight: bold;}
 
 body {
+    background-color: darken($primary, 5);
     height: 100%;
-    padding: 3rem;
-    background: linear-gradient(to bottom, #45a0e653, #45a0e653, #45a0e653, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    padding: 0!important;
     main{
+        margin-top: 1rem;
+        box-shadow: 0 0 5px black;
+        border-radius: 10px 10px 0 0;
+        padding: 1rem;
+        background-color: lighten($primary, 20);
         .main-headline{
-        margin-bottom: 3rem;
+            margin-bottom: 3rem;
         .headline-color{
             color: $primary;}
                 }
         }
         .color-darken{
             color: darken($primary, 15);}
-        footer{
-            .footer-deco{
-                margin-top: 5rem;
-                text-align: center;
-                grid-row: 5/5;
-                grid-column: 1 / span 3;
-                color: lighten($primary, 10);}
-            }
+    }
+    footer{
+        margin-bottom: 1rem;
+        box-shadow: 0 0 5px black;
+        border-radius: 0 0 10px 10px;
+        background-color: lighten($primary, 30);
+        .footer-deco{
+            text-align: left;
+            color: $secondary;
+        }
     }
 
 header{
+    display: flex;
+    justify-content: center;
     margin-top: 3rem;
-    margin-bottom: 3rem;}
+    margin-bottom: 3rem;
+    }
     
 @media (min-width:992px){
     nav{
@@ -55,8 +68,24 @@ header{
 @media (max-width:420px){
     .main-headline {margin-top: 3rem;}
 }
-.carousel-control-prev-icon {
-    background-image: url(../images/prev2.svg);}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .one{
+        order: 1;
+        padding: 2rem;
+        }
+    .two{
+        order: 2;
+        padding: 2rem;
+    }
+}
+.wrapper2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.carousel-control-next-icon {
-    background-image: url(../images/next2.svg);}
