@@ -7190,6 +7190,9 @@ body {
   body .color-darken {
     color: #4a4a4a; }
 
+div .table {
+  font-size: 11px; }
+
 footer {
   margin-bottom: 1rem;
   box-shadow: 0 0 5px black;
