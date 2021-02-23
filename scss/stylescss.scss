@@ -1,5 +1,5 @@
 $primary: #707070;
-$secondary: #347aae;
+$secondary: #449BCA;
 
 @import "./bootstrap/scss/bootstrap.scss";
 
@@ -15,7 +15,7 @@ nav{
     grid-row: 3/3;
     grid-column: 2/2;}
     a{
-        color: darken($secondary, $amount: 20)!important;
+        color: darken($secondary, $amount: 10)!important;
         padding: 1rem;
         font-size: 1.2rem; font-weight: bold;}
 
@@ -30,6 +30,8 @@ body {
         padding-bottom: 1rem;
         background-color: lighten($primary, 20);
         .main-headline{
+            padding-left: 3rem;
+            padding-right: 3rem;
             margin-bottom: 3rem;
         .headline-color{
             color: $primary;}
@@ -37,10 +39,20 @@ body {
         }
         .color-darken{
             color: darken($primary, 15);}
+        form{
+            padding: 2rem;
+        }
     }
     div{
+        h3,p{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
         .table{
             font-size: 11px;
+        }
+        ul li p{
+            padding: 0rem;
         }
     }
     footer{
@@ -57,6 +69,9 @@ body {
         .footer-deco{
             text-align: left;
             color: $secondary;
+            p{
+                font-weight: bolder;
+            }
         }
     }
 
