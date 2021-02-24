@@ -7193,6 +7193,9 @@ body {
     color: #4a4a4a; }
   body form {
     padding: 2rem; }
+  body .container {
+    padding-left: 0rem;
+    padding-right: 0rem; }
 
 div h3, div p {
   padding-left: 2rem;
@@ -7215,6 +7218,7 @@ footer {
     text-align: left;
     color: #449BCA; }
     footer .footer-deco p {
+      padding-left: 1rem;
       font-weight: bolder; }
 
 header {
@@ -7256,3 +7260,13 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center; }
+
+.social-header {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end; }
+
+.icon-social {
+  height: 4rem; }
